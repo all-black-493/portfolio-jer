@@ -5,6 +5,9 @@ import * as THREE from 'three';
 type TechIconProps = {
   model: {
     modelPath: string;
+    name: string;
+    scale?: [number, number, number];
+    rotation?: [number, number, number];
   };
 };
 
@@ -13,7 +16,7 @@ const TechIcon = ({ model }: TechIconProps) => {
     useEffect(()=>{
         if(model.name === 'Interactive Developer')
             scene.scene.traverse((child) =>{
-        if(child.isMesh && child.name === 'Object_5'){
+        if(child instanceof THREE.Mesh && child.name === 'Object_5'){
             child.material = new THREE.MeshStandardMaterial({color:'white'})
         }})
     })
