@@ -16,7 +16,7 @@ const Footer = () => {
             </div>
 
             <div className="flex flex-col justify-center">
-                <p className="text-center md:text-end">
+                <p className="text-center md:text-end"> 
                     ©{new Date().getFullYear()} Jeremy | All Black. All Rights Reserved.  
                     <br />
                     Built with React, ThreeJS and Tailwind CSS.
