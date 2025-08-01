@@ -10,26 +10,15 @@ gsap.registerPlugin(ScrollTrigger)
 const ExperienceSection = () => {
 
     useGSAP(()=>{
-<<<<<<< HEAD
         gsap.utils.toArray('.timeline-card').forEach((card) => {
             gsap.from(card as Element, {
-=======
-        gsap.utils.toArray('.timeline-card').forEach((card)=>{
-            gsap.from(card,{
->>>>>>> 0d5612c48820fb0fa37c44aea1f13decd5128dee
                 xPercent: -100,
                 opacity: 0,
                 transformOrigin: 'left left',
                 duration: 1,
-<<<<<<< HEAD
                 ease: 'power2.inOut',
                 scrollTrigger: {
                     trigger: card as Element,
-=======
-                ease:'power2.inOut',
-                scrollTrigger:{
-                    trigger:card,
->>>>>>> 0d5612c48820fb0fa37c44aea1f13decd5128dee
                     start: 'top 80%',
                 }
             })
@@ -51,21 +40,13 @@ const ExperienceSection = () => {
         });
 
         gsap.utils.toArray('.expText').forEach((text)=>{
-<<<<<<< HEAD
             gsap.from(text as Element,{
-=======
-            gsap.from(text,{
->>>>>>> 0d5612c48820fb0fa37c44aea1f13decd5128dee
                 xPercent: 0,
                 opacity: 0,
                 duration: 1,
                 ease:'power2.inOut',
                 scrollTrigger:{
-<<<<<<< HEAD
                     trigger: text as Element,
-=======
-                    trigger:text,
->>>>>>> 0d5612c48820fb0fa37c44aea1f13decd5128dee
                     start: 'top 60%',
                 }
             })
@@ -108,11 +89,7 @@ const ExperienceSection = () => {
                                                     Responsibilities
                                                 </p>
                                                 <ul className="list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50">
-<<<<<<< HEAD
                                                     {card.responsibilities.map((responsibility) => (
-=======
-                                                    {card.responsibilities.map((responsibility, i) => (
->>>>>>> 0d5612c48820fb0fa37c44aea1f13decd5128dee
                                                         <li key={responsibility} className="text-lg">
                                                             {responsibility}
                                                         </li>

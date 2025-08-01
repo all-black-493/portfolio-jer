@@ -116,57 +116,32 @@ const techStackIcons = [
   {
     name: "React Developer",
     modelPath: "/models/react_logo-transformed.glb",
-<<<<<<< HEAD
     scale: [1,1,1] as [number, number, number],
     rotation: [0, 0, 0] as [number, number, number],
-=======
-    scale: 1,
-    rotation: [0, 0, 0],
->>>>>>> 0d5612c48820fb0fa37c44aea1f13decd5128dee
   },
   {
     name: "Python Developer",
     modelPath: "/models/python-transformed.glb",
-<<<<<<< HEAD
     scale: [0.8,0.8,0.8] as [number, number, number],
     rotation: [0, 0, 0] as [number, number, number],
-=======
-    scale: 0.8,
-    rotation: [0, 0, 0],
->>>>>>> 0d5612c48820fb0fa37c44aea1f13decd5128dee
   },
   {
     name: "Backend Developer",
     modelPath: "/models/node-transformed.glb",
-<<<<<<< HEAD
     scale: [5,5,5] as [number, number, number],
     rotation: [0, -Math.PI / 2, 0] as [number, number, number],
-=======
-    scale: 5,
-    rotation: [0, -Math.PI / 2, 0],
->>>>>>> 0d5612c48820fb0fa37c44aea1f13decd5128dee
   },
   {
     name: "Interactive Developer",
     modelPath: "/models/three.js-transformed.glb",
-<<<<<<< HEAD
     scale: [0.05,0.05,0.05] as [number, number, number],
     rotation: [0, 0, 0] as [number, number, number],
-=======
-    scale: 0.05,
-    rotation: [0, 0, 0],
->>>>>>> 0d5612c48820fb0fa37c44aea1f13decd5128dee
   },
   {
     name: "CI-CD Ninja",
     modelPath: "/models/git-svg-transformed.glb",
-<<<<<<< HEAD
     scale: [0.05, 0.05, 0.05] as [number, number, number],
     rotation: [0, -Math.PI / 4, 0] as [number, number, number],
-=======
-    scale: 0.05,
-    rotation: [0, -Math.PI / 4, 0],
->>>>>>> 0d5612c48820fb0fa37c44aea1f13decd5128dee
   },
 ];
 

@@ -2,10 +2,6 @@ import { useRef } from "react"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { useGSAP } from "@gsap/react"
-<<<<<<< HEAD
-=======
-import { expCards } from "../constants"
->>>>>>> 0d5612c48820fb0fa37c44aea1f13decd5128dee
 
 gsap.registerPlugin(ScrollTrigger)
 
