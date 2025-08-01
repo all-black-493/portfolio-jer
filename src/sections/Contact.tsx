@@ -4,7 +4,11 @@ import ContactExperience from "../components/ContactExperience";
 import emailjs from '@emailjs/browser'
 
 const Contact = () => {
+<<<<<<< HEAD
     const formRef = useRef<HTMLFormElement>(null);
+=======
+    const formRef = useRef(null);
+>>>>>>> 0d5612c48820fb0fa37c44aea1f13decd5128dee
     const [formData, setformData] = useState({
         name: '',
         email: '',
@@ -13,7 +17,11 @@ const Contact = () => {
 
     const [loading, setLoading] = useState(false);
 
+<<<<<<< HEAD
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+=======
+    const handleChange = (e) => {
+>>>>>>> 0d5612c48820fb0fa37c44aea1f13decd5128dee
         const { name, value } = e.target;
         setformData({
             ...formData,
@@ -21,6 +29,7 @@ const Contact = () => {
         })
     }
 
+<<<<<<< HEAD
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setLoading(true)
@@ -35,6 +44,18 @@ const Contact = () => {
             } else {
                 throw new Error("Form reference is null.");
             }
+=======
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setLoading(true)
+        try {
+            await emailjs.sendForm(
+                import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+                import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+                formRef.current,
+                import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
+            )
+>>>>>>> 0d5612c48820fb0fa37c44aea1f13decd5128dee
 
         } catch (error) {
             console.log('Email JS Error, ', error)
@@ -81,7 +102,11 @@ const Contact = () => {
                                     <textarea
                                         name="message"
                                         id="message"
+<<<<<<< HEAD
                                         rows={5}
+=======
+                                        rows="5"
+>>>>>>> 0d5612c48820fb0fa37c44aea1f13decd5128dee
                                         placeholder="Your Message"
                                         value={formData.message}
                                         onChange={handleChange}

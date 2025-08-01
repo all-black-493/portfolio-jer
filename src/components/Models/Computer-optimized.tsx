@@ -6,15 +6,23 @@ Files: computer-optimized.glb [486.38KB] > /home/jeremy/Projects/github_projects
 
 import { useGLTF } from '@react-three/drei'
 import type { JSX } from 'react/jsx-runtime'
+<<<<<<< HEAD
 import * as THREE from 'three'
+=======
+>>>>>>> 0d5612c48820fb0fa37c44aea1f13decd5128dee
 
 export function Computer(props: JSX.IntrinsicElements["group"]) {
   const { nodes, materials } = useGLTF('/models/computer-optimized-transformed.glb')
   return (
     <group {...props} dispose={null}>
       <group position={[-4.005, 67.549, 58.539]}>
+<<<<<<< HEAD
         <mesh castShadow receiveShadow geometry={(nodes.Cube000_ComputerDesk_0001_1 as THREE.Mesh).geometry} material={materials['ComputerDesk.001']} />
         <mesh castShadow receiveShadow geometry={(nodes.Cube000_ComputerDesk_0001_2 as THREE.Mesh).geometry} material={materials['FloppyDisk.001']} />
+=======
+        <mesh castShadow receiveShadow geometry={nodes.Cube000_ComputerDesk_0001_1.geometry} material={materials['ComputerDesk.001']} />
+        <mesh castShadow receiveShadow geometry={nodes.Cube000_ComputerDesk_0001_2.geometry} material={materials['FloppyDisk.001']} />
+>>>>>>> 0d5612c48820fb0fa37c44aea1f13decd5128dee
       </group>
     </group>
   )

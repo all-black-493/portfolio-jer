@@ -9,8 +9,13 @@ const Testimonials = () => {
             <TitleHeader title="What People Say About Me"
             sub="⭐ Client Feedback Highlights" />
             <div className="lg:columns-3 md:columns-2 columns-1 mt-16">
+<<<<<<< HEAD
                 {testimonials.map((testimonial, index) => (
                     <GlowCard card={testimonial} index={index}>
+=======
+                {testimonials.map((testimonial)=>(
+                    <GlowCard card={testimonial}>
+>>>>>>> 0d5612c48820fb0fa37c44aea1f13decd5128dee
                         <div className="flex items-center gap-3">
                             <div>
                                 <img src={testimonial.imgPath} alt={testimonial.name} />
